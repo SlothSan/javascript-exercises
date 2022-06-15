@@ -1,8 +1,18 @@
-const ftoc = function() {
+const ftoc = function(num) {
+f = (num - 32) * .5556;
+
+fhr = Number(f.toFixed(1));
+
+return fhr;
 
 };
 
-const ctof = function() {
+const ctof = function(num) {
+c = (num * 1.8) + 32;
+
+cls = Number(c.toFixed(1));
+
+return cls;
 
 };
 
