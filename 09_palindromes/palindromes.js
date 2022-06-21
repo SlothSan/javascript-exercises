@@ -1,4 +1,8 @@
-const palindromes = function () {
+const palindromes = function (str) {
+    let regex = /[\W_]/g;
+    let lowerCaseRegexString = str.toLowerCase().replace(regex, "");
+    let reversedString = lowerCaseRegexString.split("").reverse().join("");
+    return reversedString === lowerCaseRegexString;
 
 };
 
